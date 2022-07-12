@@ -17,7 +17,7 @@
     </head>
     <body>
         <header>
-            <a href="#"><img src="/img/logo.svg" alt=""/></a>
+            <a href="#"><img src="localhost:5000/img/logo.svg" alt=""/></a>
             <div class="header_button">
                 <button onclick="" class="clear_button">회원가입</button>
                 <button onclick="" class="default_button">로그인하기</button>
@@ -28,14 +28,17 @@
             <div id="signup_contents">
                 <div id="title">Sign up</div>
                 <div class="input_id">
-                    <input type="text" class ="overlap_id_input" placeholder="아이디를 입력하세요."/>
+                    <input type="text" class="user_id" placeholder="아이디를 입력하세요. (12자 제한)" maxlength="12"/>
                     <button class="overlap_id_btn">중복확인</button>
                 </div>
-                <input type="password" placeholder="비밀번호를 입력하세요."/>
+                <input type="password" class="user_pw" placeholder="비밀번호를 입력하세요."/>
                 <input type="password" placeholder="비밀번호를 한 번 더 입력하세요."/>
-                <input type="text" placeholder="사용하실 이름을 입력하세요."/>
-                <button onclick="" class="default_button">회원가입하기</button>
+                <input type="text" class="user_name" placeholder="사용하실 이름을 입력하세요."/>
+                <button onclick="save_user_info()" class="default_button">회원가입하기</button>
             </div>
         </div>
+
+        <!--script-->
+        <script type="text/javascript" src="/static/signup.js"></script>
     </body>
 </html>

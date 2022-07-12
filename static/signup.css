@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
+    background-color: #FAFAFB;
 }
 
 header {
@@ -38,7 +39,7 @@ input {
     padding: 6px 14px;
 }
 
-.overlap_id_input {
+.user_id {
     width: 400px;
     border-radius: 4px 0 0 4px;
 }
