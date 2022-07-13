@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Webpage Title -->
+        <title>WELCOME | MOVIE CARDS</title>
+
+        <!-- 메타태그 OG경로 -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="www.moviecards.com">
+        <meta property="og:title" content="MOVIE CARDS">
+        <meta property="og:image" content="https://example.com/image.jpg">
+        <meta property="og:description" content="나의 영화 포토카드">
+        <meta property="og:site_name" content="MY MOVIE CARDS">
+        <meta property="og:locale" content="en_US">
+        <!-- 다음의 태그는 필수는 아니지만, 포함하는 것을 추천함 -->
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- 휴대폰에서 전화번호 자동링크 없앨때 -->
+        <meta name="format-detection" content="telephone=no">
+
+        <!-- Bulma CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+        <!-- Font Awesome CSS -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <!-- MY CSS-->
+        <link href="{{url_for('static', filename='mystyle.css')}}" rel="stylesheet">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+        <script>
+        </script>
+    </head>
+
+    <body>
+    <header>
+        <h1><a href="/">
+            <img src="{{url_for('static', filename='logo.png') }}"></a>
+        </h1>
+        <nav class="spot">
+            <ul>
+                <li><a class="button is-light" href="/sign-up"><strong>회원가입</strong></a></li>
+                <li><a class="button is-blue" href="/login"><strong>로그인하기</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--중간내용 시작-->
+    <section class="section">
+        <div class="block" >
+                <h1 class="title">MY MOVIE CARDS</h1>
+                <h2 class="subtitle">나의 영화 기록일기</h2>
+        </div>
+        <div class="block">
+            <p class="control">
+                <a href="/login">
+                    <button class="button is-blue"
+                            onclick="toggle_login()">
+                        시작하기
+                    </button></a>
+            </p>
+        </div>
+    </section>
+
+    <aside>
+        <div class="container">
+            <img src="{{ url_for('static', filename='card1.png') }}"
+            style="float: left; margin-left: 30px; margin-right: 30px; margin-top: 40px;">
+            <img src="{{ url_for('static', filename='card2.png') }}">
+        </div>
+
+    </aside>
+    </body>
+</html>
