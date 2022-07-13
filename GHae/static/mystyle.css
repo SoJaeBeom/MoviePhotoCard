@@ -1,0 +1,108 @@
+header {
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    }
+
+.spot{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    }
+
+.spot li{
+    float: left;
+    padding: 10px 3px;
+    }
+
+.body {
+    background-color: #FFFFFF;
+    min-height: 100vh;
+		padding-top: 3.25rem;
+}
+
+
+.section {
+			width:500px;
+			text-align:left;
+			float:left;
+			padding:10px;
+			padding-top: 5.25rem;
+			margin: 100px 20px 0px 100px;
+}
+
+.aside {
+            width:500px;
+			text-align:right;
+			float:right;
+			padding:10px;
+			padding-top: 5.25rem;
+			margin: 0 30px 0px 100px;
+}
+
+.container{
+            width:50rem;
+            height: 50rem;
+            top: 5rem;
+            overflow: hidden;
+            position: relative;
+}
+
+.button.is-blue{
+                background-color: #6574FF;
+                color: #FFFFFF;
+                border-color: transparent;
+}
+
+.button.is-outlined {
+                background-color: transparent;
+                border-color: #6574FF;
+                color: #6574FF !important;
+}
+
+
+/*흰색 배경 버튼*/
+.button.is-light{
+    border-color: transparent;
+    color: #000000;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 3rem;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.is-sparta {
+    color: #e8344e !important;
+}
+
+.modal-content {
+    width: 600px;
+    max-width: 80%;
+}
+
+.logo {
+    width: 150px
+    max-width: 200%;
+}
+
+.image img {
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
