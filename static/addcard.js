@@ -36,11 +36,11 @@ function addCard() {
         data: {movie_name_give: name, movie_img_give: img, date_give: date, star_give: star, comment_give: comment},
         success: function (response) {
             console.log(response)
-            let result = confirm('카드를 추가하시겠습니까?');
+            let result = confirm('메인 페이지로 이동하시겠습니까?');
             if (result) {
-                window.location.href = '/mycard'
-            } else {
                 window.location.href = '/'
+            } else {
+                window.location.href = '/mycard'
             }
         }
     });
@@ -86,4 +86,8 @@ function datePickerClick() {
             console.log(e);
             // e.date를 찍어보면 Thu Jun 27 2019 00:00:00 GMT+0900 (한국 표준시) 위와 같은 형태로 보인다.
         });
+}
+
+function clickCardStoreBtn() {
+    window.location.href = "/mycard"
 }

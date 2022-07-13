@@ -17,6 +17,14 @@ def home():
 def addcard():
    return render_template('addcard.html')
 
+@app.route('/mycard')
+def mycard():
+   return render_template('mycard.html')
+
+@app.route('/signup')
+def signup():
+   return render_template('sign-up.html')
+
 @app.route("/movie-list", methods=["POST"])
 def movie_save():
     movie_list = list(db.movies.find({}, {'_id': False}))

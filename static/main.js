@@ -22,7 +22,7 @@ function listing() {
                             <h5 class="card-title">${name}</h5>
                         </div>
                         <div>
-                            <button onclick="clickBtn(${num})" class="default_button">만들기</button>
+                            <button onclick="clickAddCardBtn(${num})" class="default_button">만들기</button>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,10 @@ function listing() {
     });
 }
 
-function clickBtn(num) {
-    console.log(num)
+function clickAddCardBtn(num) {
     window.location.href = "/addcard?id=" + num
+}
+
+function clickCardStoreBtn() {
+    window.location.href = "/mycard"
 }
