@@ -40,3 +40,9 @@ function clickAddCardBtn(num) {
 function clickCardStoreBtn() {
     window.location.href = "/mycard"
 }
+
+function logout() {
+   $.removeCookie('mytoken', {path: '/'});
+    alert('로그아웃!')
+    window.location.href = "login"
+}

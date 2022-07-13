@@ -37,6 +37,12 @@ function posting() {
     });
 }
 
+function logout() {
+   $.removeCookie('mytoken', {path: '/'});
+    alert('로그아웃!')
+    window.location.href = "login"
+}
+
 // <div className="mycard"
 //      style="background-image:url('https://file.mk.co.kr/meet/yonhap/2021/12/08/image_readtop_2021_1123769_0_152311.jpg')">
 //     <div className="mycard_opacity"></div>

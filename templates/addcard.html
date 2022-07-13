@@ -24,13 +24,14 @@
             integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 </head>
 <body>
 <header>
     <a href="#"><img src="../static/img/logo.svg" alt=""/></a>
     <div class="header_button">
         <button onclick="clickCardStoreBtn()" class="default_button">내 카드 보관함</button>
-        <button onclick="" class="clear_button">로그아웃</button>
+        <button onclick="logout()" class="clear_button">로그아웃</button>
     </div>
 </header>
 <div class="card_container">

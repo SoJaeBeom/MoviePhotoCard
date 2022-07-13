@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="/static/mycard.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;700&display=swap" rel="stylesheet">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
         <title>무비 포토카드</title>
     </head>
     <body>
@@ -20,7 +22,7 @@
             <a href="#"><img src="/static/logo.svg" alt=""/></a>
             <div class="header_button">
                 <a href="/addcard"><button onclick="" class="default_button">카드 생성하기</button></a>
-                <a href="/#"><button onclick="" class="clear_button">로그아웃</button></a>
+                <a href="/#"><button onclick="logout()" class="clear_button">로그아웃</button></a>
             </div>
         </header>
          <div id="main">
