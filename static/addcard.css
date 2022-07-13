@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -1px;
+}
+
+header {
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.default_button {
+    font-size: 16px;
+    padding: 8px 14px;
+    background-color: #6574FF;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.clear_button {
+    font-size: 16px;
+    padding: 8px 14px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto 60px auto;
+}
+
+#movie_img_container {
+    margin: 30px;
+}
+
+#movie_img {
+    width: 250px;
+}
+
+#add_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#ui-datepicker-div {
+    width: 300px;
+    height: 300px;
+}
+
+#add_card_btn {
+    margin-left: 265px;
+}
