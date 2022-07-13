@@ -1,8 +1,10 @@
-* { margin: 0;
+* {
+    margin: 0;
     bottom: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
+    font-weight: 200;
 }
 
 header {
@@ -50,6 +52,8 @@ header {
 }
 
 .mycard {
+    background-position: center;
+    background-size: cover;
     min-width: 260px;
     min-height: 340px;
     background-color: #6574FF;
@@ -60,7 +64,24 @@ header {
     position: relative;
 }
 
+.mycard_top {
+    position: absolute;
+    top: 24px;
+    z-index: 120;
+}
+
 .mycard_bottom {
     position: absolute;
     bottom: 24px;
+    z-index: 120;
+}
+
+.mycard_opacity {
+    width: 260px;
+    height: 340px;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    border-radius: 4px;
 }
