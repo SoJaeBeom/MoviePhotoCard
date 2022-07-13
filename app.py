@@ -74,10 +74,10 @@ def check_dup():
 
 # ----- my-page ----- #
 
-@app.route("/mycard", methods=["GET"])
+@app.route("/my-card", methods=["GET"])
 def mycard_get():
     cards_list = list(db.cards.find({}, {'_id': False}))
-    return jsonify({'cards':cards_list})
+    return jsonify({'cards': cards_list})
 
 @app.route("/movie-list", methods=["POST"])
 def movie_save():

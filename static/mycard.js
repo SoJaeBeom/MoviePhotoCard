@@ -5,7 +5,7 @@ $(document).ready(function (){
 function posting() {
     $.ajax({
         type: 'GET',
-        url: '/mycard',
+        url: '/my-card',
         data: {},
         success: function (response) {
             let rows = response['cards']
