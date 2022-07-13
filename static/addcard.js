@@ -38,7 +38,7 @@ function addCard() {
             console.log(response)
             let result = confirm('메인 페이지로 이동하시겠습니까?');
             if (result) {
-                window.location.href = '/'
+                window.location.href = '/main'
             } else {
                 window.location.href = '/mycard'
             }
@@ -91,3 +91,9 @@ function datePickerClick() {
 function clickCardStoreBtn() {
     window.location.href = "/mycard"
 }
+
+function logout() {
+    $.removeCookie('mytoken', {path: '/'});
+    window.location.href = '/';
+}
+

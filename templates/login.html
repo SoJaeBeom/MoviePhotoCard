@@ -84,7 +84,7 @@
                             // 이 토큰을 mytoken이라는 키 값으로 쿠키에 저장합니다.
                         $.cookie('mytoken', response['token'], {path: '/'});
                         alert('로그인 완료!') // 로그인이 완료되면 /(movie-list -영화리스트)로 이동합니다.
-                        window.location.replace("/movie-list")
+                        window.location.replace("/main")
                     } else {
                         // 로그인이 안되면 에러메시지를 띄웁니다.
                         alert(response['msg'])
@@ -98,7 +98,7 @@
     <body>
 
     <header>
-        <h1><a href="/">
+        <h1><a href="/GHae/static">
             <img src="{{url_for('static', filename='logo.png') }}">
         </a></h1>
     </header>
@@ -137,7 +137,7 @@
                             <h4 class="mb-3">아이디가 없으신가요?</h4>
                             <nav class="level is-mobile">
                                 <a class="level-item button is-outlined"
-                                   href="sign-up"> 회원가입하기 </a>
+                                   href="signup"> 회원가입하기 </a>
                             </nav>
                         </div>
                     </div>
