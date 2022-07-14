@@ -42,16 +42,3 @@ function logout() {
     alert('로그아웃!')
     window.location.href = "login"
 }
-
-// <div className="mycard"
-//      style="background-image:url('https://file.mk.co.kr/meet/yonhap/2021/12/08/image_readtop_2021_1123769_0_152311.jpg')">
-//     <div className="mycard_opacity"></div>
-//     <div className="mycard_top">
-//         <div className="mycard_title">dd</div>
-//         <div className="mycard_date">dd</div>
-//     </div>
-//     <div className="mycard_bottom">
-//         <div className="mycard_star">★★★★</div>
-//         <div className="mycard_comment">dd</div>
-//     </div>
-// </div>
