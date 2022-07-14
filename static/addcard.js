@@ -36,7 +36,7 @@ function addCard() {
         data: {movie_name_give: name, movie_img_give: img, date_give: date, star_give: star, comment_give: comment},
         success: function (response) {
             console.log(response)
-            let result = confirm('메인 페이지로 이동하시겠습니까?');
+            let result = confirm('카드가 생성되었습니다. 메인 페이지로 이동하시겠습니까?');
             if (result) {
                 window.location.href = '/main'
             } else {
