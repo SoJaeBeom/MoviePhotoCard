@@ -45,41 +45,32 @@
 
     <body>
     <header>
-        <h1><a href="/">
-            <img src="{{url_for('static', filename='logo.png') }}"></a>
-        </h1>
-        <nav class="spot">
-            <ul>
-                <li><a class="button is-light" href="/signup"><strong>회원가입</strong></a></li>
-                <li><a class="button is-blue" href="/login"><strong>로그인하기</strong></a></li>
-            </ul>
-        </nav>
+        <a href="/">
+            <img src="{{url_for('static', filename='logo.png') }}">
+        </a>
+        <div class="header_button">
+            <a class="clear_button" href="/signup">회원가입</a>
+            <a class="default_button" href="/login">로그인하기</a>
+        </div>
     </header>
 
     <!--중간내용 시작-->
     <section class="section">
-        <div class="block" >
-                <h1 class="title">MY MOVIE CARDS</h1>
-                <h2 class="subtitle">나의 영화 기록일기</h2>
-        </div>
-        <div class="block">
-            <p class="control">
+        <div class="section_wrap">
+            <div class="block">
+                <h1 class="title">MOVIE PHOTO CARDS</h1>
+                <h2 class="subtitle">영화 기록일기</h2>
                 <a href="/login">
-                    <button class="button is-blue"
-                            onclick="toggle_login()">
+                    <button class="button is-blue" onclick="toggle_login()">
                         시작하기
-                    </button></a>
-            </p>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="img_wrap">
+            <img src="/static/Group%2018.svg" alt=""/>
         </div>
     </section>
 
-    <aside>
-        <div class="container">
-            <img src="{{ url_for('static', filename='card1.png') }}"
-            style="float: left; margin-left: 30px; margin-right: 30px; margin-top: 40px;">
-            <img src="{{ url_for('static', filename='card2.png') }}">
-        </div>
-
-    </aside>
     </body>
 </html>

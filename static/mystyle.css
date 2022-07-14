@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+
 header {
     height: 100px;
     margin: 0 auto;
@@ -7,71 +16,87 @@ header {
     align-items: center;
 }
 
+.default_button {
+    font-size: 16px;
+    padding: 8px 14px;
+    background-color: #6574FF;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clear_button {
+    font-size: 16px;
+    padding: 8px 14px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: #000;
+}
+
 header h1 {
     position: absolute;
     left: 50px;
     top: 0;
-    }
+}
 
-.spot{
+.spot {
     position: absolute;
     right: 50px;
     top: 0;
-    }
+}
 
-.spot li{
+.spot li {
     float: left;
     padding: 10px 3px;
-    }
+}
 
 .body {
     background-color: #FFFFFF;
     min-height: 100vh;
-		padding-top: 3.25rem;
+    padding-top: 3.25rem;
 }
-
 
 .section {
-			width:500px;
-			text-align:left;
-			float:left;
-			padding:10px;
-			padding-top: 5.25rem;
-			margin: 100px 20px 0px 100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120px;
+    text-align: left;
+    float: left;
+    padding-top: 5.25rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.aside {
-            width:500px;
-			text-align:right;
-			float:right;
-			padding:10px;
-			padding-top: 5.25rem;
-			margin: 0 30px 0px 100px;
+.block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
 }
 
-.container{
-            width:50rem;
-            height: 50rem;
-            top: 5rem;
-            overflow: hidden;
-            position: relative;
+.container {
+    width: 50rem;
+    height: 50rem;
+    top: 5rem;
+    overflow: hidden;
+    position: relative;
 }
 
-.button.is-blue{
-                background-color: #6574FF;
-                color: #FFFFFF;
-                border-color: transparent;
+.button.is-blue {
+    background-color: #6574FF;
+    color: #FFFFFF;
+    border-color: transparent;
 }
 
 .button.is-outlined {
-                background-color: transparent;
-                border-color: #6574FF;
-                color: #6574FF !important;
+    background-color: transparent;
+    border-color: #6574FF;
+    color: #6574FF !important;
 }
 
 
 /*흰색 배경 버튼*/
-.button.is-light{
+.button.is-light {
     border-color: transparent;
     color: #000000;
 }
@@ -84,7 +109,6 @@ header h1 {
 
 .subtitle {
     font-size: 2rem;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .is-sparta {
@@ -94,15 +118,4 @@ header h1 {
 .modal-content {
     width: 600px;
     max-width: 80%;
-}
-
-.logo {
-    width: 150px
-    max-width: 200%;
-}
-
-.image img {
-    object-fit:cover;
-    width:100%;
-    height:100%;
 }
